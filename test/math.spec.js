@@ -17,7 +17,7 @@ describe('Math class', function(){
             done()
         })        
     })
-    it.only('Multiply two numbers', function () {
+    it.skip('Multiply two numbers', function () {
         const math = new Math();
         //função para testar e validar o comportamento
         assert.equal(math.multiply(5,5), 25)
