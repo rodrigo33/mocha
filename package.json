@@ -1,0 +1,8 @@
+{
+  "name": "mocha",
+
+  "scripts": {
+  "test": "mocha"
+},
+  "author": "Rodrigo"
+}
