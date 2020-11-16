@@ -10,7 +10,7 @@ describe('Math class', function(){
     //comportamento esperado pela minha classe
     it('Sum two numbers', function(){
         const math = new Math();
-
+        
         assert.equal(math.sum(5, 5), 10)
     })
 })
