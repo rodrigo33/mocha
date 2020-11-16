@@ -15,7 +15,11 @@ describe('Math class', function(){
         math.sum(5, 5, value => {
             assert.equal(value, 10)
             done()
-        })
-        
+        })        
+    })
+    it.only('Multiply two numbers', function () {
+        const math = new Math();
+        //função para testar e validar o comportamento
+        assert.equal(math.multiply(5,5), 25)
     })
 })

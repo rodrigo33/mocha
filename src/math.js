@@ -5,5 +5,8 @@ class Math {
         }, 2500)
         return a + b;
     }
+    multiply(a, b){
+        return a * b 
+    }
 }
 module.exports = Math;
