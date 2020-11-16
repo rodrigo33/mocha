@@ -8,9 +8,14 @@ const Math = require('../src/math')
 //segundo arg. função, que os testes serão escritos
 describe('Math class', function(){
     //comportamento esperado pela minha classe
-    it('Sum two numbers', function(){
+    it('Sum two numbers', function(done){
         const math = new Math();
+        this.timeout(3000)
         
-        assert.equal(math.sum(5, 5), 10)
+        math.sum(5, 5, value => {
+            assert.equal(value, 10)
+            done()
+        })
+        
     })
 })
